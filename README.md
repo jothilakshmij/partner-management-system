@@ -242,9 +242,7 @@ npm start
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
 
-This project is licensed under the ISC License.
 
 ## 🐛 Troubleshooting
 
@@ -267,10 +265,4 @@ This project is licensed under the ISC License.
    - Delete `node_modules` and `package-lock.json`
    - Run `npm install` again
 
-## 📞 Support
 
-For support and questions, please open an issue in the repository or contact the development team.
-
----
-
-**Happy Coding! 🚀**
