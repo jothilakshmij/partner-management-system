@@ -29,46 +29,6 @@ A full-stack web application for managing business partners with a modern React 
 - Recharts - Composable charting library
 - CSS3 - Styling and responsive design
 
-📁 Project Structure
-
-
-partner-management-system/
-│
-├── backend/
-│   ├── src/
-│   │   ├── models/
-│   │   │   └── Partner.js               Partner data model
-│   │   ├── routes/
-│   │   │   └── partnerRoutes.js         API routes
-│   │   ├── controllers/
-│   │   │   └── partnerController.js     Business logic
-│   │   ├── config/
-│   │   │   └── db.js                    Database connection
-│   │   └── server.js                    Express server setup
-│   └── package.json
-│
-├── frontend/
-│   ├── public/
-│   │   ├── index.html
-│   │   └── manifest.json
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── Navbar.js                Navigation component
-│   │   │   ├── PartnerForm.js           Add/Edit partner form
-│   │   │   ├── PartnerTable.js          Partners list table
-│   │   │   └── Dashboard.js             Statistics dashboard
-│   │   ├── pages/
-│   │   │   ├── Home.js                   Main dashboard page
-│   │   │   ├── AddPartner.js             Add partner page
-│   │   │   └── EditPartner.js            Edit partner page
-│   │   ├── App.js                        Main app component
-│   │   ├── index.js                      React entry point
-│   │   └── index.css                     Global styles
-│   └── package.json
-│
-└── README.md
-
-
  🚀 Getting Started
 
  Prerequisites
@@ -139,38 +99,6 @@ Frontend Application
 
    The frontend will be available at `http://localhost:3000`
 
-📊 API Endpoints
-
-Partners API
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/partners` | Get all partners |
-| GET | `/api/partners/:id` | Get single partner |
-| POST | `/api/partners` | Create new partner |
-| PUT | `/api/partners/:id` | Update partner |
-| DELETE | `/api/partners/:id` | Delete partner |
-| GET | `/api/partners/stats` | Get partner statistics |
-
- Health Check
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/health` | Server health status |
-
- 📋 Partner Model
-
-The Partner model includes the following fields:
-
-- name (String, Required): Partner's full name
-- company (String, Required): Company name
-- email (String, Required, Unique): Email address
-- phone (String, Required): Phone number
-- region (String, Required): Geographic region
-- type (Enum, Required): Partner type (Distributor/Vendor)
-- status (Enum, Required): Partner status (Active/Inactive)
-- createdAt (Date): Creation timestamp
-- updatedAt (Date): Last update timestamp
 
 Dashboard
 - Statistics Cards**: Total, Active, Inactive partners count
@@ -220,15 +148,18 @@ npm start
  📸 Screenshots
 
 Screenshots will be added to showcase the application interface
+ sign up 
+ <img width="1670" height="802" alt="image" src="https://github.com/user-attachments/assets/2bce14e2-5579-42c5-beaf-9e9de8a54a65" />
 
  Dashboard View
-*Screenshot of the main dashboard with statistics and charts
+<img width="1880" height="860" alt="image" src="https://github.com/user-attachments/assets/5bfdf3e4-8b7e-486c-811e-47ba9e8bec0c" />
 
 Partner List
 Screenshot of the partners table with all partner information
+<img width="1878" height="852" alt="image" src="https://github.com/user-attachments/assets/292759de-0767-4afd-9b6d-3f0a2976d881" />
 
  Add/Edit Partner Form
-Screenshot of the partner form for adding or editing partners
+<img width="1907" height="568" alt="image" src="https://github.com/user-attachments/assets/0f0c8590-e025-4377-b206-3578fd4f7846" />
 
  🤝 Contributing
 
@@ -238,27 +169,13 @@ Screenshot of the partner form for adding or editing partners
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-
-
  🐛 Troubleshooting
 
  Common Issues
-
 1. MongoDB Connection Error
-   - Ensure MongoDB is running
-   - Check the connection string in `.env`
-   - Verify MongoDB is accessible on the specified port
-
 2.Port Already in Use
-   - Change the PORT in `.env` file
-   - Kill the process using the port: `npx kill-port 5000`
-
 3. CORS Issues
-   - Ensure the backend CORS is properly configured
-   - Check that the frontend is making requests to the correct backend URL
-
 4. Dependencies Issues
-   - Delete `node_modules` and `package-lock.json`
-   - Run `npm install` again
+
 
 
